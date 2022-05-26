@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 // Schema 생성
 
 const Postschema = new mongoose.Schema({
+    
+    postId:String,
     name: {
         type: String,
         required: true
@@ -19,13 +21,9 @@ const Postschema = new mongoose.Schema({
         type: String,
         required: true
     },
-    postNum: {
-        type: Number,
-        required: true
-    },
     postdate: {
         type: String,
-        required: true
+        required: true,
     }
 })
 
